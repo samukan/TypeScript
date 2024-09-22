@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Assignment 4 - Product Details</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      form {
+        margin-bottom: 20px;
+      }
+      input {
+        margin-bottom: 10px;
+      }
+      button {
+        display: block;
+        margin-top: 10px;
+      }
+      #electronicProductDetails,
+      #bookProductDetails {
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Product Information</h1>
+
+    <h2>Electronic Device</h2>
+    <form id="electronicForm">
+      <label>
+        Brand:
+        <input type="text" id="brand" required /> </label
+      ><br />
+      <label>
+        Model:
+        <input type="text" id="model" required /> </label
+      ><br />
+      <button type="submit">Submit Electronic Device</button>
+    </form>
+    <div id="electronicProductDetails"></div>
+
+    <h2>Book</h2>
+    <form id="bookForm">
+      <label>
+        Title:
+        <input type="text" id="title" required /> </label
+      ><br />
+      <label>
+        Author:
+        <input type="text" id="author" required /> </label
+      ><br />
+      <button type="submit">Submit Book</button>
+    </form>
+    <div id="bookProductDetails"></div>
+
+    <script src="src/t4.js"></script>
+  </body>
+</html>
